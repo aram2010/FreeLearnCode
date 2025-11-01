@@ -5,9 +5,9 @@
     <button id="coursesBtn"><h1>All courses ↓</h1></button>
     <button id="profileBtn"><h1>Profile</h1></button>
 
-    <button class="courses" id="course1"><h2>HTML, CSS, JS</h2></button>
-    <button class="courses" id="course2"><h2>Python</h2></button>
-    <button class="courses" id="course3"><h2>Vue.js</h2></button>
+    <button class="courses1" id="course1"><h2>HTML, CSS, JS</h2></button>
+    <button class="courses1" id="course2"><h2>Python</h2></button>
+    <button class="courses1" id="course3"><h2>Vue.js</h2></button>
   </header>
 </template>
 
@@ -15,7 +15,7 @@
 import { onMounted } from 'vue'
 
 onMounted(() => {
-  const courses = document.querySelectorAll('.courses')
+  const courses = document.querySelectorAll('.courses1')
   const coursesBtn = document.getElementById('coursesBtn')
 
   // Hide all course buttons initially
@@ -73,7 +73,7 @@ header button {
     left: 283px;
     width: 187px;
 }
-.courses{
+.courses1{
     border-top:1px solid black;
 }
 #coursesBtn:hover{
